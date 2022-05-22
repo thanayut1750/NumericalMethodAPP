@@ -1,0 +1,105 @@
+/* asdasd */
+@import '~katex/dist/katex.css';
+table {
+  width: 100%;
+}
+.example-action-buttons {
+  padding-bottom: 20px;
+}
+*{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+#resultField {
+  white-space: pre-line;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+
+.container {
+    align-items: inline;
+    flex-direction: row;
+    justify-content: left;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.matrix-wrapper {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border: 1px solid white;
+  flex-wrap: wrap;
+  margin:auto;
+}
+
+.matrix-cell {
+  flex-shrink: 0;
+  background: red;
+  margin: 1em;
+  display: flex;
+  text-align: center;
+}
+
+.wrapper-center {
+  display: flex;
+  align-items: inline;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.vector-bGauss{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid white;
+  margin:auto;
+}
+.b{
+  flex-shrink: 0;
+  background: red;
+  margin: 1em;
+  display: flex;
+  text-align: center;
+}
+.spacecenter{
+  display: flex;
+}
+
+.xcenterGauss{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-center{
+  margin-left: 1rem;
+}

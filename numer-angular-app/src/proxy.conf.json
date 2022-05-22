@@ -1,0 +1,32 @@
+{
+  "/api":{
+    "target" : "http://api:3000",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/bisection":{
+    "target" : "http://api:3000",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/falsepotion":{
+    "target" : "http://api:3000",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/onepoint":{
+    "target" : "http://api:3000",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/secant":{
+    "target" : "http://api:3000",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/newraph":{
+    "target" : "http://api:3000",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
