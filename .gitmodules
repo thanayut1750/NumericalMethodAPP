@@ -1,0 +1,3 @@
+[submodule "numer-angular-app"]
+	path = numer-angular-app
+	url = https://github.com/thanayut1750/NumericalMethodAPP
