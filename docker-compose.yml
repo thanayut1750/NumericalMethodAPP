@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  api:
+    build: 
+      dockerfile: Dockerfile
+      context: ./numerAPI
+      target: APIdevelopment
+
+    volumes:
+      - ./numerAPI:/numerapp/src/app
+    ports:
+      - 3000:3000
+
+    command: uvicorn app.main:app --host=0.0.0.0 --port 3000 --reload
+  
+  frontend:
+    build: 
+      dockerfile: Dockerfile
+      context: ./numer-angular-app
+      target: FrontEndDevelopment
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+
+    command: bash -c "npm start"
+    volumes:
+      - ./numer-angular-app:/numerapp/frontend/src/app
+    ports:
+      - 4200:4200
+      - '49153:49153'
+    links:
+      - api
