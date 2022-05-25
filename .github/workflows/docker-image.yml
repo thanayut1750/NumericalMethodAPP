@@ -24,6 +24,6 @@ jobs:
       id: ip
       uses: haythem/public-ip@v1.2
     - name: test API with curl command
-      run: curl http://${{steps.ip.outputs.ipv4}}:3000/docs
+      run: curl -X 'GET' 'http://${{steps.ip.outputs.ipv4}}:3000/api' 
     - name: test Front End with curl command
-      run: curl http://${{steps.ip.outputs.ipv4}}:4200
+      run: curl -X 'GET' 'http://${{steps.ip.outputs.ipv4}}:4200' 
