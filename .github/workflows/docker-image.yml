@@ -21,6 +21,6 @@ jobs:
     - name: Check files
       run: ls -ltr
     - name: test API with ping command
-      run: ping –c 5 http://localhost:3000/api
+      run: ping –c 5 0.0.0.0:3000/api
     - name: test Front End with ping command
-      run: ping –c 5 http://localhost:4200
+      run: ping –c 5 0.0.0.0:4200
